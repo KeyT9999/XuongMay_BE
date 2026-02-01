@@ -5,6 +5,8 @@ import { AuthModule } from './auth/auth.module';
 import { UsersModule } from './users/users.module';
 import { EmailModule } from './email/email.module';
 import { CloudinaryModule } from './cloudinary/cloudinary.module';
+import { MaterialsModule } from './materials/materials.module';
+import { StylesModule } from './styles/styles.module';
 import { AppController } from './app.controller';
 import configuration from './config/configuration';
 
@@ -19,6 +21,8 @@ import configuration from './config/configuration';
     UsersModule,
     EmailModule,
     CloudinaryModule,
+    MaterialsModule,
+    StylesModule,
   ],
   controllers: [AppController],
 })
