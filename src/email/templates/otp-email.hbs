@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mã OTP đặt lại mật khẩu</title>
+</head>
+<body style="margin: 0; padding: 0; font-family: Arial, sans-serif; background-color: #f5f5f5;">
+  <table width="100%" cellpadding="0" cellspacing="0" style="background-color: #f5f5f5; padding: 40px 0;">
+    <tr>
+      <td align="center">
+        <table width="600" cellpadding="0" cellspacing="0" style="background-color: #ffffff; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+          <!-- Header -->
+          <tr>
+            <td style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding: 40px; text-align: center; border-radius: 8px 8px 0 0;">
+              <h1 style="color: #ffffff; margin: 0; font-size: 28px; font-weight: bold;">Đặt lại mật khẩu</h1>
+            </td>
+          </tr>
+          
+          <!-- Content -->
+          <tr>
+            <td style="padding: 40px;">
+              <p style="color: #333333; font-size: 16px; line-height: 1.6; margin: 0 0 20px 0;">
+                Xin chào <strong>{{name}}</strong>,
+              </p>
+              
+              <p style="color: #333333; font-size: 16px; line-height: 1.6; margin: 0 0 20px 0;">
+                Bạn đã yêu cầu đặt lại mật khẩu cho tài khoản <strong>{{username}}</strong>.
+              </p>
+              
+              <p style="color: #333333; font-size: 16px; line-height: 1.6; margin: 0 0 30px 0;">
+                Vui lòng sử dụng mã OTP sau để đặt lại mật khẩu của bạn:
+              </p>
+              
+              <!-- OTP Box -->
+              <table width="100%" cellpadding="0" cellspacing="0">
+                <tr>
+                  <td align="center" style="padding: 20px 0;">
+                    <div style="background-color: #f8f9fa; border: 2px dashed #667eea; border-radius: 8px; padding: 30px; display: inline-block;">
+                      <p style="color: #666666; font-size: 14px; margin: 0 0 10px 0; text-transform: uppercase; letter-spacing: 1px;">Mã OTP của bạn</p>
+                      <p style="color: #667eea; font-size: 36px; font-weight: bold; margin: 0; letter-spacing: 8px; font-family: 'Courier New', monospace;">{{otp}}</p>
+                    </div>
+                  </td>
+                </tr>
+              </table>
+              
+              <p style="color: #ff6b6b; font-size: 14px; line-height: 1.6; margin: 30px 0 20px 0; padding: 15px; background-color: #fff5f5; border-left: 4px solid #ff6b6b; border-radius: 4px;">
+                <strong>⚠️ Lưu ý quan trọng:</strong><br>
+                • Mã OTP này chỉ có hiệu lực trong <strong>10 phút</strong>.<br>
+                • Mã OTP chỉ có thể sử dụng <strong>một lần</strong>.<br>
+                • Nếu bạn không yêu cầu đặt lại mật khẩu, vui lòng bỏ qua email này.
+              </p>
+              
+              <p style="color: #666666; font-size: 14px; line-height: 1.6; margin: 30px 0 0 0;">
+                Trân trọng,<br>
+                <strong>Đội ngũ Quản Lý Xưởng May</strong>
+              </p>
+            </td>
+          </tr>
+          
+          <!-- Footer -->
+          <tr>
+            <td style="background-color: #f8f9fa; padding: 20px; text-align: center; border-radius: 0 0 8px 8px; border-top: 1px solid #e9ecef;">
+              <p style="color: #999999; font-size: 12px; margin: 0;">
+                Email này được gửi tự động, vui lòng không trả lời email này.
+              </p>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
